@@ -1,0 +1,268 @@
+#include<stdio.h>
+#include<graphics.h>//要安装的，图形库文件easyx
+#include<mmsystem.h>//win32 多媒体设备接口
+#pragma comment(lib,"winmm.lib")
+#define WIN_WIDTH 1280
+#define WIN_HEIGHT 700
+#define BULLET_NUM 5500//玩家最大子弹数量
+#define ENEMY_NUM 20
+/*
+int a;
+char b;
+*/
+struct Image
+{
+	IMAGE bakcGround;//背景图片
+	IMAGE player[2];
+	IMAGE bullet[2];
+	IMAGE enemy[4];
+}image;
+//结构体三兄弟，结构体，枚举，联合
+enum TYPE
+{
+	SMALL,
+	BIG,
+};
+struct Plane //我，敌机，子弹
+{
+	int x;
+	int y;
+	bool flag;//是否存活(c语言没有bool，c++才有) true flase
+	int width;
+	int height;
+	union myUnion
+	{
+		int type;//敌机独有属性
+		int score;//玩家独有属性
+	}un;
+	int hp;//血量
+}player, bullet[BULLET_NUM], enemy[ENEMY_NUM];
+DWORD t1, t2, t3, t4;
+//分模块处理，专门的事情，专门的函数做
+void EnemyHP(int i)
+{
+	if (rand() % 4== 0)//十分之一的概率产生一个大飞机
+	{
+		enemy[i].un.type = BIG;
+		enemy[i].hp = 3;
+	}
+	else
+	{
+		enemy[i].un.type = SMALL;
+		enemy[i].hp = 1;
+	}
+}
+//加载图片
+void GameInit()
+{
+	//设置随机数种子
+	srand(GetTickCount());
+	t1 = t2 = t3 =t4 = GetTickCount();//获取系统开机到当前所经过的毫秒数
+	//播放音乐
+	mciSendString("open ./images/2.mp3 alias BGM", 0, 0, 0);//向多媒体设备接口发送字符串 media device interface
+	mciSendString("play BGM repeat", 0, 0, 0);
+	//加载背景图片
+	loadimage(&image.bakcGround, "./images/background8.png");//吧图片加载并保存
+	loadimage(&image.player[0], "./images/planeNormal_13.png");
+	loadimage(&image.player[1], "./images/planeNormal_2.png");
+	loadimage(&image.bullet[0], "./images/bullet1.png");
+	loadimage(&image.bullet[1], "./images/bullet2.png");
+	loadimage(&image.enemy[0], "./images/enemy11.png");
+	loadimage(&image.enemy[1], "./images/enemy1_down1.png");
+	loadimage(&image.enemy[2], "./images/enemy22.png");
+	loadimage(&image.enemy[3], "./images/enemy2.png");
+	//初始化玩家数据
+	player.height = 126;
+	player.width = 102;
+	player.x = WIN_WIDTH / 2;
+	player.y = WIN_HEIGHT - 126;
+	player.flag = true;
+	player.hp = 999;
+	player.un.score = 0;
+	//初始化子弹数据
+	for (int i = 0; i < BULLET_NUM; i++)
+	{
+		bullet[i].flag = false;
+		bullet[i].height = 11;
+		bullet[i].width = 5;
+
+	}
+	//初始化敌机
+	for (int i = 0; i < ENEMY_NUM; i++)
+	{
+		enemy[i].flag = false;
+		enemy[i].width = 57;
+		enemy[i].height = 43;
+
+		EnemyHP(i);
+
+	}
+}
+void Gamedraw()
+{
+	//绘制背景
+	putimage(0, 0, &image.bakcGround);
+	//绘制玩家
+	//putimage(player.x, player.y, &image.player[0], NOTSRCERASE);//(这里可以改善一下飞机的外貌)
+	putimage(player.x, player.y, &image.player[1], SRCINVERT);
+	//绘制子弹
+	for (int i = 0; i < BULLET_NUM; i++)
+	{
+		if (bullet[i].flag == true)
+		{
+			putimage(bullet[i].x, bullet[i].y, &image.bullet[0], NOTSRCERASE);
+			putimage(bullet[i].x, bullet[i].y, &image.bullet[1], SRCINVERT);
+		}
+	}
+	for (int i = 0; i < ENEMY_NUM; i++)
+	{
+		if (enemy[i].flag)
+		{
+			if (enemy[i].un.type == TYPE::SMALL)
+			{
+				//putimage(enemy[i].x, enemy[i].y, &image.enemy[0], NOTSRCERASE);
+				putimage(enemy[i].x, enemy[i].y, &image.enemy[1], SRCINVERT);
+			}
+			else if (enemy[i].un.type == TYPE::BIG)
+			{
+				//putimage(enemy[i].x, enemy[i].y, &image.enemy[2], NOTSRCERASE);
+				putimage(enemy[i].x, enemy[i].y, &image.enemy[3], SRCINVERT);
+			}
+			
+		}
+	}
+}
+void CreateBullet()
+{
+	for (int i = 0; i < BULLET_NUM; i++)
+	{
+		if (bullet[i].flag == false)
+		{
+			bullet[i].flag = true;
+			bullet[i].x = player.x + 50;
+			bullet[i].y = player.y;
+			break;
+		}
+	}
+}
+void BulletMove(int speed)
+{
+	for (int i = 0; i < BULLET_NUM; i++)
+	{
+		if (bullet[i].flag == true)
+		{
+			bullet[i].y -= speed;
+			if (bullet[i].y <= 0)
+			{
+				bullet[i].flag = false;
+			}
+		}
+	}
+}
+//产生敌机
+void CreateEnemy()
+{
+	for (int i = 0; i < ENEMY_NUM; i++)
+	{
+		if (enemy[i].flag == 0)
+		{
+			enemy[i].flag = true;
+			enemy[i].x = rand() % (WIN_WIDTH - 100);
+			enemy[i].y = 0;
+			EnemyHP(i);
+			break;
+		}
+	}
+}
+void EnemyMove(int speed)
+{
+	for (int i = 0; i < ENEMY_NUM; i++)
+	{
+		if (enemy[i].flag)
+		{
+			enemy[i].y += speed;
+			if (enemy[i].y>=WIN_HEIGHT)
+			{
+				enemy[i].flag = false;
+			}
+		}
+	}
+}
+void GameControl(int speed)
+{
+	//_getch();GetAnsyncKeyState();
+	if (GetAsyncKeyState(VK_UP )&& player.y>=0)
+	{
+		player.y -= speed;
+	}
+	if (GetAsyncKeyState(VK_DOWN) && player.y+126<=WIN_HEIGHT)
+	{
+		player.y += speed;
+	}
+	if (GetAsyncKeyState(VK_LEFT) &&player.x+50>=0)
+	{
+		player.x -= speed;
+	}
+	if (GetAsyncKeyState(VK_RIGHT) &&player.x+50<=WIN_WIDTH)
+	{
+		player.x += speed;
+	}
+	//发射子弹
+	if (GetAsyncKeyState(VK_SPACE)&& t2-t1>200)
+	{
+		CreateBullet();
+		mciSendString("close gun", 0, 0, 0);
+		mciSendString("open ./images/mvp.mp3 alias gun", 0, 0, 0);
+		mciSendString("play gun", 0, 0, 0);
+		t1 = t2;
+	}
+	t2 = GetTickCount();
+	if (t4 - t3 > rand() % 500 + 500)
+	{
+		CreateEnemy();
+		t3 = t4;
+	}
+	t4 = GetTickCount();
+	EnemyMove(1);
+	BulletMove(1);
+}
+void PlayEnemy()
+{
+	//每个敌军和每个子弹都要比较
+	for (int i = 0; i < ENEMY_NUM; i++)
+	{
+		if (!enemy[i].flag)
+			continue;
+		//遍历子弹数组
+		for (int k = 0; k < BULLET_NUM; k++)
+		{
+			if (!bullet[k].flag)
+				continue;
+			//判断子弹是否击中敌机
+			if (bullet[k].x>enemy[i].x && bullet[k].x<enemy[i].x + enemy[i].width &&
+				bullet[k].y>enemy[i].y && bullet[k].y < enemy[i].y + enemy[i].height)
+			{
+
+				//击中了，敌机消失，子弹也消失
+				enemy[i].flag = false;
+				bullet[i].flag = false;
+				
+			}
+		}
+	}
+}
+int main()
+{
+	initgraph(WIN_WIDTH, WIN_HEIGHT/*, SHOWCONSOLE*/);//创建一个图形窗口
+	GameInit();
+	BeginBatchDraw();//开启双款重绘图，现在内存里面画好，在显示给你看
+	while (1)
+	{
+		Gamedraw();
+		FlushBatchDraw();//我想看了
+		GameControl(1);
+	}
+	EndBatchDraw();//结束
+	return 0;
+}
+
