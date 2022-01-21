@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta content="text/html" charset="utf-8"> 
+<title>中国反卷局@我眼中的春节（China Counter roll bureau）</title> 
+</head>
+ <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+              src="权御天下.mp3">
+</audio>
+<audio  controls="controls"loop="loop" preload="auto"
+              src="处处吻.mp3">
+</audio>
+<audio controls="controls"loop="loop" preload="auto"
+              src="如我西沉.mp3">
+</audio>
+<audio controls="controls"loop="loop" preload="auto"
+              src="有种.mp3">
+</audio>
+<body background="过年.jpg" 
+               style="background-repeat:
+               background-attachment:fixed;
+               background-size:100% 100%; ">
+<div id="container" style="width:2000px">
+
+<div id="header" style="background-color: #7FFFD4">
+<h1 style="margin-bottom:0;"><font color="red">“中国的广西，世界的桂林”广西的春节有很多特色民俗</font></h1></div>
+
+<div id="menu" style="background-color:#808080;height:1260px;width:200px;float:left;">
+<b>介绍：</b><br><font color="gold">1、南宁崇左地区：每当春节来临之际，南宁市民便会准备许多过年食品，其中，年糕、粽子、粉利是南宁人过春节必备的传统食品，民间俗称春节食品“三件头”。年糕与粽子寓意“年年高（糕）中（粽）”，南宁人买年糕要印“发”字；而粉利则与春节期间摆设在门户两边的盆桔组合成“岁岁吉（桔）利”之意。还有就是斗牛，斗牛在南宁也是非常出名的一个民俗。</font>
+<br>
+<br>
+<br><font color="red">2、桂林-柳州-河池一带：舞龙舞狮拜年是桂柳人喜爱的传统项目。因此每到春节前夕，舞龙舞狮队都将龙和狮子装扮一新，苦练龙和狮子舞的传统套路。</font>
+<br>
+<br>
+<br><font color="Cyan">3、北海-钦州-防城港北部湾一带春节──农历年初一通通关门闭户，家家贴上红对联。惯例初一不街。“恭贺新禧，添丁发财”这句话随时随地可以听见。过年习俗“初一吃斋”，不得倒水落地，拜年道贺是新年见面的礼节，长辈惯给封包给小孩。</font>
+<br>
+<br>
+<br><font color="GreenYellow  ">4、桂平-玉林-梧州一带。这一方向的人们过春节颇具地方色彩。年前数日，人们便开始“三忙”：一忙“洁户”，家家要打扫卫生，去污除垢；二忙“办年”，准备过年所需的鸡（阉鸡为主，陆川一带则以鹅为主）、鸭、鱼、肉，各类蔬菜。以及春联、鞭炮、香纸蜡烛等；三忙“炸食”，制作各种油炸食品如“白散”、酥角、脆子、薄脆之类。</font>
+<br>
+<br>
+<br><font color="DarkViolet ">5、百色-德保-靖西-隆林一带
+
+在桂西百色市不少县农村，每每大过年的时候，至今仍然沿袭着一些各地不一、各有特色、饶有兴味、多姿多彩的古老旧习俗。</font>
+
+<br>
+<br>
+<br>扩展资料：
+
+<b>壮族人没有作揖、跪拜、握手的习俗，而是直接通过语言和丰富的表情来表达自己的节日问侯，因此在春节，壮族人是不会给长辈磕头拜年或者作揖的。熟人在路上相见，互相道贺“恭喜发财”，这可不是一句普通的客气话哦！这是壮族人最真心的祝福。
+
+古代壮族曾流行过文身、凿齿等习俗。唐代文学家柳宗元就曾提到柳州峒民（壮族古称之一）尽是文身人。宋代史书《太平寰宇记》也记载说今贵港市一带的妇女出嫁时要凿去一颗牙齿，古称“凿齿”。现在，这些风俗只在偏远的局部地区有零星流传。</b></div>
+
+<div id="content" style="background-color:;height:2600px;width:1800px;float:left;"><h2 align="">
+<img src="年糕2.jpg" alt="Pulpit rock" width="304" height="228">
+<img src="年糕.jpg"alt="Pulpit rock" width="304" height="228">
+<img src="粽子1.jpg"alt="Pulpit rock" width="304" height="228">
+<img src="粉利.jpg"alt="Pulpit rock" width="304" height="228">
+<video width="304" height="228" controls>
+  <source src="斗牛.mp4" type="video/ogg">
+  <source src="斗牛.mp4" type="video/mp4">
+  <source src="斗牛.mpeg" type="video/webm">
+  <object data="斗牛.mpeg" width="320" height="240">
+    <embed width="320" height="240" src="斗牛.mpeg">
+  </object>
+</video><a href="https://www.xuexila.com/lishi/bk/chuantongjieri/53590.html" target="_blank" rel="noopener noreferrer">点击了解更多</a></h2>
+<h3>
+<img src="舞龙.JPEG" alt="Pulpit rock" width="304" height="228">
+<img src="舞龙2.jpg"alt="Pulpit rock" width="304" height="228">
+<img src="舞龙3.jpg" alt="Pulpit rock" width="304" height="228">
+<img src="舞龙4.jpg"alt="Pulpit rock" width="304" height="228">
+<video width="304" height="228" controls>
+  <source src="舞狮子.mp4" type="video/ogg">
+  <source src="舞狮子.mp4" type="video/mp4">
+  <source src="舞狮子.mp4" type="video/webm">
+  <object data="舞狮子.mp4" width="320" height="240">
+    <embed width="320" height="240" src="舞狮子.mp4">
+  </object>
+</video>
+<a href="https://www.bilibili.com/video/BV1kt4y1X7Gi?from=search&seid=18126333677015636012&spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer">点击了解更多</a></h3>
+<h4>接下来我将要说一说我的城市————柳州（龙城）</h4>
+<p>柳州是隶属于广西壮族自治区，它在中北部；由于地形类似“三江四合，抱城如壶”，又别称“壶城”。柳州还有个别称“龙城”源于南朝梁，柳州从建城到至今已经有两千多年的历史，可谓是历史名城。不仅如此，柳州是一座汇聚壮族、汉族等30多个名民族的城市。有着最古老的壮族和侗族土著民族，并且汇聚了各民族的风情，壮族的歌、瑶族的舞、苗族的节和侗族的楼，堪称柳州“民族风情四绝”。
+
+
+柳州不仅有民族文化，更是广西最大的一个工业城市，有许多知名品牌例如：东风汽车、五菱汽车、柳州钢铁等。是全国唯一拥有一汽、东风、上汽和重汽等四大汽车集团整车生产企业的城市，还是中国内陆与东盟往来的重要物流中转基地。不仅如此，更值得骄傲的，柳州承接了多项世界级的水上运动赛事，成为了我国南方的重要水上基地，知名的水上运动娱乐之都。<a href="https://www.bilibili.com/video/BV1jP4y1Y7Mi?from=search&seid=3960609756079103588&spm_id_from=333.337.0.0" target="_blank" rel="noopener noreferrer">点击了解更多</a>
+
+
+即使你不了解柳州，没关系，各大直播平台常出现的网红美食——螺蛳粉，是著名的柳州小吃，酸辣可口，让人欲罢不能！
+
+
+<br><img src="五星街.jpg" alt="Pulpit rock" width="304" height="228">
+<img src="五星街晚上.jpg"alt="Pulpit rock" width="304" height="228">
+<img src="螺蛳粉.jpg" alt="Pulpit rock" width="304" height="228">
+<img src="螺蛳粉2.jpeg"alt="Pulpit rock" width="304" height="228">
+<img src="柳州全貌.jpg"alt="Pulpit rock" width="304" height="228">
+<img src="柳州.jpeg"alt="Pulpit rock" width="304" height="228">
+</h4>
+当然柳州不只有美味的螺蛳粉，还有让人留恋忘返的美景呢，推荐大家柳州必去景点指南！</p>
+<p>TOP 1：龙潭公园
+
+龙潭公园又叫大龙潭景区，位于柳州市区南部，距市中心非常近。面积有544公顷，是一个喀斯特自然山水景观。可谓群峰环绕，在景致上可谓是奇山异水；碧波荡漾的镜湖、群山环抱、林木苍翠，巨树参天；一眼望去，满目翠绿，山披绿衣，平地绿树如盖。春天的桃花和秋天的桂花更是“锦上添花”的一抹色彩。是绝佳的避暑胜地，以后避暑不一定要去昆明，柳州的龙潭公园也是不错的选择。</p><img src="龙潭1.jpeg" alt="Pulpit rock" width="304" height="228">
+<img src="龙潭2.jpeg"alt="Pulpit rock" width="304" height="228">
+<br><p>TOP 2：程阳八寨
+
+程阳八寨是一片古老的侗族村寨，周围青山绿树环境优美，由程阳八个自然村寨组成，有“百节之乡”的美誉。喜欢名族特色的可以来漫步传统村庄特色，参观程阳风雨桥等全国闻名的古迹，还可观看具有侗族风情的民俗表演等，活动丰富，是观光摄影、领略侗族风情的绝佳去处。
+
+
+
+程阳八寨分别是指马鞍（安）寨、平寨、岩寨、东寨、大寨、平坦寨、平埔寨、吉昌寨。其中前五个寨子是相连的，距离很近，可以步行观光游玩。
+
+
+
+坐落在河上的程阳风雨桥是侗族风雨桥的代表，在入口处往里走不久便能看见。它是规模最大，造型最美最有特色的一座桥之一，建于1912年，保存至今非常难得。且桥上雕刻绘画仍看得清楚，栩栩如生。</P><br><img src="程阳八寨1.jpeg" alt="Pulpit rock" width="304" height="228">
+<img src="程阳八寨2.jpeg"alt="Pulpit rock" width="304" height="228">
+
+ <p>TOP 3：百里柳江旅游景区
+
+百里柳江在柳州城中蜿蜒而过，能邂逅浪漫，擦出爱的火花；沿河而下河畔有江滨公园、柳州文庙、蟠龙山等美丽景致，夜景更是出了名的经典，北岸的大型音乐喷泉、南岸被景观灯勾勒出迷人线条的山水，每一处都让人流连忘返。步行或者游船都是不错的选择。
+
+顺着两岸霓虹灯闪烁，繁华街道人头攒动，清风轻拂，似乎连风都是甜的。在游船上还可以看到柳江喷泉、柳州文庙、江滨公园等等。还有著名的柳江大型音乐喷泉，无敌超美夜景，吹着江风，听着音乐，看着五颜六色的喷泉。</p>
+<br><img src="柳州百里2.jpeg" alt="Pulpit rock" width="304" height="228">
+<img src="柳州百里1.jpeg"alt="Pulpit rock" width="304" height="228">
+<p>接下来是有关柳州过年的一些美食和柳州的一些生活，我将与大家分享我的柳州春节：</p>
+<video width="304" height="228" controls>
+  <source src="柳州游.mp4" type="video/ogg">
+  <source src="柳州游.mp4" type="video/mp4">
+  <source src="柳州游.mp4" type="video/webm">
+  <object data="柳州游.mp4" width="320" height="240">
+    <embed width="320" height="240" src="柳州游.mp4">
+  </object>
+</video><a href="https://www.bilibili.com/video/BV1Db41167xE/?spm_id_from=333.788.recommend_more_video.1" target="_blank" rel="noopener noreferrer">点击了解柳州的年味</a>
+<p><a href="https://www.bilibili.com/video/BV13b411S7eG/?spm_id_from=333.788.recommend_more_video.6" target="_blank" rel="noopener noreferrer">点击了解@春节柳州的美食</a></p>
+</div>
+
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+版权 © 21软件 苏先生</div>
+
+</div>
+ 
+</body>
+</html>
